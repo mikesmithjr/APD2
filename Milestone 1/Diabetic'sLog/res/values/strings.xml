@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diabetic\'s Log</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_new_log_entry">NewLogEntry</string>
+    <string name="title_activity_log_item_list">LogItemList</string>
+    <string name="title_activity_new_med_entry">NewMedEntry</string>
+    <string name="title_activity_reminder">Reminder</string>
+    <string name="title_activity_edit_med_entry">EditMedEntry</string>
+    <string name="title_activity_edit_doc_info">EditDocInfo</string>
+    <string name="title_activity_view_doc_info">ViewDocInfo</string>
+    <string name="title_activity_med_list">MedList</string>
+    <string name="title_activity_reminder_list">ReminderList</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_view_log_entry">ViewLogEntry</string>
+    <string name="new_log_entry">New Log Entry</string>
+    <string name="view_log_item_list">View Log Item List</string>
+    <string name="view_medication_list">View Medication List</string>
+    <string name="view_doctor_s_info">View Doctor\'s Info</string>
+    <string name="today_s_date_">Today\'s Date:</string>
+    <string name="date_hint">10/13/2013</string>
+    <string name="current_time_">Current Time:</string>
+    <string name="time_hint">10:00am</string>
+    <string name="blood_sugar_reading_">Blood Sugar Reading:</string>
+    <string name="reading_hint">95</string>
+    <string name="reason_for_entry_">Reason for Entry:</string>
+    <string name="reason_hint">Scheduled</string>
+    <string name="save_log_entry">Save Log Entry</string>
+
+</resources>
