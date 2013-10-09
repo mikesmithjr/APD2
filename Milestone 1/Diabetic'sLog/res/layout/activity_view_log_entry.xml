@@ -1,17 +1,109 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#008080"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ViewLogEntry" >
-
-    <TextView
-        android:layout_width="wrap_content"
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/white"
+	        android:text="@string/today_s_date_"/>
 
-</RelativeLayout>
+	    <TextView
+	        android:id="@+id/dateFieldView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/date_hint"
+	        android:textColor="@android:color/white"
+	        android:textSize="20sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/white"
+	        android:text="@string/current_time_"/>
+	    <TextView 
+	        android:id="@+id/timeFieldView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:text="@string/time_hint"
+	        android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/white"
+	        android:text="@string/blood_sugar_reading_"/>
+	    <TextView 
+	        android:id="@+id/sugarCountFieldView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:text="@string/reading_hint"
+	        android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/white"
+	        android:text="@string/reason_for_entry_"/>
+	    <TextView 
+	        android:id="@+id/reasonFieldView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:text="@string/reason_hint"
+	        android:textSize="20sp" />
+    </LinearLayout>
+    
+    <Button 
+		    android:id="@+id/deleteLogEntry"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="100dp"
+		    android:background="@android:color/darker_gray"
+		    android:text="@string/delete_log_entry"
+		    android:textColor="@android:color/white"/>
+
+</LinearLayout>

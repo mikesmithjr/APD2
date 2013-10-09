@@ -1,17 +1,113 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#008080"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SettingsActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/white"
+	        android:text="@string/blood_sugar_units"/>
 
-</RelativeLayout>
+	    <RadioGroup 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        <RadioButton 
+	            android:id="@+id/radio_mgdl"
+	 			android:checked="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/mg_dl"
+	            android:textColor="@android:color/white"
+	            android:onClick="onRadioButtonClicked"/>
+	        <RadioButton 
+	            android:id="@+id/radio_mmolL"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/mmol_l"
+	            android:textColor="@android:color/white"
+	            android:onClick="onRadioButtonClicked"/>
+	    </RadioGroup>
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="20sp" 
+	        android:textColor="@android:color/white"
+	        android:text="@string/reminders"/>
+
+	    <Switch 
+	        android:id="@+id/reminderSwitch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textOn="On"
+	        android:textOff="Off"
+	        
+	        android:textColor="@android:color/white"
+	        />
+
+    </LinearLayout>
+    
+    <Button 
+		    android:id="@+id/manageRemindersButton"
+		    android:layout_marginTop="15dp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@android:color/darker_gray"
+		    android:text="@string/manage_reminders"
+		    android:textColor="@android:color/white"/>
+    <Button 
+		    android:id="@+id/editDocInfoButton"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@android:color/darker_gray"
+		    android:text="@string/edit_doctor_s_information"
+		    android:textColor="@android:color/white"/>
+    <Button 
+		    android:id="@+id/emailSupportButton"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@android:color/darker_gray"
+		    android:text="@string/email_support_team"
+		    android:textColor="@android:color/white"/>
+    <Button 
+		    android:id="@+id/faqSiteButton"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@android:color/darker_gray"
+		    android:text="@string/visit_f_a_q_website"
+		    android:textColor="@android:color/white"/>
+    
+
+</LinearLayout>

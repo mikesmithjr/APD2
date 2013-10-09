@@ -28,5 +28,28 @@
     <string name="reason_for_entry_">Reason for Entry:</string>
     <string name="reason_hint">Scheduled</string>
     <string name="save_log_entry">Save Log Entry</string>
+    <string name="delete_log_entry">Delete Log Entry</string>
+    <string name="doc_address_hint">Diabetic Doctors of America\r\n123 Any Street\r\nAnywhere, Texas 75009</string>
+    <string name="doctor_s_name_">Doctor\'s Name:</string>
+    <string name="dr_name_hint">Dr. John Smith</string>
+    <string name="phone_number_">Phone Number:</string>
+    <string name="dr_phone_hint">214-555-1212</string>
+    <string name="doctor_s_office_">Doctor\'s Office:</string>
+    <string name="please_edit_this_in_settings_">Please Edit This in Settings.</string>
+    <string name="save_doctor_info">Save Doctor Info</string>
+    <string name="update_medication">Update Medication</string>
+    <string name="med_qty_hint">1am 1pm</string>
+    <string name="qty_to_take_">Qty. to Take:</string>
+    <string name="med_name_hint">Medication #1</string>
+    <string name="medication_name_">Medication Name:</string>
+    <string name="save_new_medication">Save New Medication</string>
+    <string name="manage_reminders">Manage Reminders</string>
+    <string name="edit_doctor_s_information">Edit Doctor\'s Information</string>
+    <string name="email_support_team">Email Support Team</string>
+    <string name="visit_f_a_q_website">Visit F.A.Q. Website</string>
+    <string name="blood_sugar_units">Blood Sugar Units</string>
+    <string name="mg_dl">mg/dL</string>
+    <string name="mmol_l">mmol/L</string>
+    <string name="reminders">Reminders</string>
 
 </resources>

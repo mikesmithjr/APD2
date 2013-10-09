@@ -21,19 +21,46 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int ic_action_content_new=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080009;
-        public static final int dateField=0x7f080004;
-        public static final int logItemListButton=0x7f080001;
-        public static final int medListButton=0x7f080002;
-        public static final int newLogEntryButton=0x7f080000;
-        public static final int reasonField=0x7f080007;
-        public static final int saveLogEntry=0x7f080008;
-        public static final int sugarCountField=0x7f080006;
-        public static final int timeField=0x7f080005;
-        public static final int viewDocInfoButton=0x7f080003;
+        public static final int action_new_entry=0x7f080022;
+        public static final int action_settings=0x7f080023;
+        public static final int dateField=0x7f08000b;
+        public static final int dateFieldView=0x7f08001d;
+        public static final int deleteLogEntry=0x7f080021;
+        public static final int docAddressField=0x7f080002;
+        public static final int docAddressFieldView=0x7f08001c;
+        public static final int drNameField=0x7f080000;
+        public static final int drNameFieldView=0x7f08001a;
+        public static final int drNumField=0x7f080001;
+        public static final int drNumFieldView=0x7f08001b;
+        public static final int editDocInfoButton=0x7f080017;
+        public static final int emailSupportButton=0x7f080018;
+        public static final int faqSiteButton=0x7f080019;
+        public static final int logItemListButton=0x7f080008;
+        public static final int manageRemindersButton=0x7f080016;
+        public static final int medListButton=0x7f080009;
+        public static final int medNameField=0x7f080004;
+        public static final int medNameFieldNew=0x7f080010;
+        public static final int medQtyField=0x7f080005;
+        public static final int medQtyFieldNew=0x7f080011;
+        public static final int newLogEntryButton=0x7f080007;
+        public static final int radio_mgdl=0x7f080013;
+        public static final int radio_mmolL=0x7f080014;
+        public static final int reasonField=0x7f08000e;
+        public static final int reasonFieldView=0x7f080020;
+        public static final int reminderSwitch=0x7f080015;
+        public static final int saveDocInfo=0x7f080003;
+        public static final int saveLogEntry=0x7f08000f;
+        public static final int saveNewMedication=0x7f080012;
+        public static final int sugarCountField=0x7f08000d;
+        public static final int sugarCountFieldView=0x7f08001f;
+        public static final int timeField=0x7f08000c;
+        public static final int timeFieldView=0x7f08001e;
+        public static final int updateMedication=0x7f080006;
+        public static final int viewDocInfoButton=0x7f08000a;
     }
     public static final class layout {
         public static final int activity_edit_doc_info=0x7f030000;
@@ -50,31 +77,41 @@ public final class R {
         public static final int activity_view_log_entry=0x7f03000b;
     }
     public static final class menu {
-        public static final int edit_doc_info=0x7f070000;
-        public static final int edit_med_entry=0x7f070001;
-        public static final int log_item_list=0x7f070002;
-        public static final int main=0x7f070003;
-        public static final int med_list=0x7f070004;
-        public static final int new_log_entry=0x7f070005;
-        public static final int new_med_entry=0x7f070006;
-        public static final int reminder=0x7f070007;
-        public static final int reminder_list=0x7f070008;
-        public static final int settings=0x7f070009;
-        public static final int view_doc_info=0x7f07000a;
-        public static final int view_log_entry=0x7f07000b;
+        public static final int main=0x7f070000;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int blood_sugar_reading_=0x7f050016;
+        public static final int blood_sugar_units=0x7f05002e;
         public static final int current_time_=0x7f050014;
         public static final int date_hint=0x7f050013;
+        public static final int delete_log_entry=0x7f05001b;
+        public static final int doc_address_hint=0x7f05001c;
+        public static final int doctor_s_name_=0x7f05001d;
+        public static final int doctor_s_office_=0x7f050021;
+        public static final int dr_name_hint=0x7f05001e;
+        public static final int dr_phone_hint=0x7f050020;
+        public static final int edit_doctor_s_information=0x7f05002b;
+        public static final int email_support_team=0x7f05002c;
         public static final int hello_world=0x7f050002;
+        public static final int manage_reminders=0x7f05002a;
+        public static final int med_name_hint=0x7f050027;
+        public static final int med_qty_hint=0x7f050025;
+        public static final int medication_name_=0x7f050028;
+        public static final int mg_dl=0x7f05002f;
+        public static final int mmol_l=0x7f050030;
         public static final int new_log_entry=0x7f05000e;
+        public static final int phone_number_=0x7f05001f;
+        public static final int please_edit_this_in_settings_=0x7f050022;
+        public static final int qty_to_take_=0x7f050026;
         public static final int reading_hint=0x7f050017;
         public static final int reason_for_entry_=0x7f050018;
         public static final int reason_hint=0x7f050019;
+        public static final int reminders=0x7f050031;
+        public static final int save_doctor_info=0x7f050023;
         public static final int save_log_entry=0x7f05001a;
+        public static final int save_new_medication=0x7f050029;
         public static final int time_hint=0x7f050015;
         public static final int title_activity_edit_doc_info=0x7f050008;
         public static final int title_activity_edit_med_entry=0x7f050007;
@@ -88,9 +125,11 @@ public final class R {
         public static final int title_activity_view_doc_info=0x7f050009;
         public static final int title_activity_view_log_entry=0x7f05000d;
         public static final int today_s_date_=0x7f050012;
+        public static final int update_medication=0x7f050024;
         public static final int view_doctor_s_info=0x7f050011;
         public static final int view_log_item_list=0x7f05000f;
         public static final int view_medication_list=0x7f050010;
+        public static final int visit_f_a_q_website=0x7f05002d;
     }
     public static final class style {
         /** 
