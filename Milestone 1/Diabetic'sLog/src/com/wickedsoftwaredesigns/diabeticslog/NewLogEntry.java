@@ -1,18 +1,39 @@
 package com.wickedsoftwaredesigns.diabeticslog;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 
-public class NewLogEntry extends Activity {
+public class NewLogEntry extends Activity implements OnClickListener{
 
+	EditText date;
+	EditText time;
+	EditText reading;
+	EditText reason;
+	Button saveNew;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.setTitle("New Log Entry");
 		setContentView(R.layout.activity_new_log_entry);
+		
+		ActionBar actionBar = getActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
+		
+		date = (EditText)findViewById(R.id.dateField);
+		time = (EditText)findViewById(R.id.timeField);
+		reading = (EditText)findViewById(R.id.sugarCountField);
+		reason = (EditText)findViewById(R.id.reasonField);
+		saveNew = (Button)findViewById(R.id.saveLogEntryButton);
+		saveNew.setOnClickListener(this);
 	}
 	
 	/**
@@ -48,6 +69,13 @@ public class NewLogEntry extends Activity {
 		}
 		
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		Intent intent = new Intent(this, MainActivity.class);
+		startActivity(intent);
 	}
 
 }

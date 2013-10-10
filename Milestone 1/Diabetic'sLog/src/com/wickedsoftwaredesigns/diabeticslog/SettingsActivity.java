@@ -1,18 +1,41 @@
 package com.wickedsoftwaredesigns.diabeticslog;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class SettingsActivity extends Activity {
+public class SettingsActivity extends Activity implements OnClickListener{
 
+	
+	Button manageReminders;
+	Button editDocInfo;
+	Button emailSupport;
+	Button faqWeb;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.setTitle("Settings");
 		setContentView(R.layout.activity_settings);
+		
+		ActionBar actionBar = getActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
+		
+		manageReminders = (Button)findViewById(R.id.manageRemindersButton);
+		editDocInfo = (Button)findViewById(R.id.editDocInfoButton);
+		emailSupport = (Button)findViewById(R.id.emailSupportButton);
+		faqWeb = (Button)findViewById(R.id.faqSiteButton);
+		manageReminders.setOnClickListener(this);
+		editDocInfo.setOnClickListener(this);
+		emailSupport.setOnClickListener(this);
+		faqWeb.setOnClickListener(this);
+		
 	}
 	
 	/**
@@ -49,5 +72,35 @@ public class SettingsActivity extends Activity {
 		}
 		
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		//building on click functions
+		if (v.equals(this.manageReminders)) {
+			
+			//building intent for activity change
+			Intent intent = new Intent(this, ReminderList.class);
+			startActivity(intent);
+			
+		}else if (v.equals(this.editDocInfo)) {
+			
+			//building intent for activity change
+			Intent intent = new Intent(this, EditDocInfo.class);
+			startActivity(intent);
+			
+			
+		}else if (v.equals(this.emailSupport)) {
+			
+			alertMessage("You Cicked the Email Support Button.");
+			
+			
+		}else if (v.equals(this.faqWeb)) {
+			
+			
+			alertMessage("You Clicked the F.A.Q. Button.");
+			
+		}
+		
 	}
 }

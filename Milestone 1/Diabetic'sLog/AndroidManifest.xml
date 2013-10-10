@@ -24,47 +24,59 @@
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.NewLogEntry"
-            android:label="@string/title_activity_new_log_entry" >
+            android:label="@string/title_activity_new_log_entry"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
+            
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.LogItemList"
-            android:label="@string/title_activity_log_item_list" >
+            android:label="@string/title_activity_log_item_list"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.NewMedEntry"
-            android:label="@string/title_activity_new_med_entry" >
+            android:label="@string/title_activity_new_med_entry"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.Reminder"
-            android:label="@string/title_activity_reminder" >
+            android:label="@string/title_activity_reminder"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.EditMedEntry"
-            android:label="@string/title_activity_edit_med_entry" >
+            android:label="@string/title_activity_edit_med_entry"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.EditDocInfo"
-            android:label="@string/title_activity_edit_doc_info" >
+            android:label="@string/title_activity_edit_doc_info"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.ViewDocInfo"
-            android:label="@string/title_activity_view_doc_info" >
+            android:label="@string/title_activity_view_doc_info"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.MedList"
-            android:label="@string/title_activity_med_list" >
+            android:label="@string/title_activity_med_list"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.ReminderList"
-            android:label="@string/title_activity_reminder_list" >
+            android:label="@string/title_activity_reminder_list"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.SettingsActivity"
-            android:label="@string/title_activity_settings" >
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
         <activity
             android:name="com.wickedsoftwaredesigns.diabeticslog.ViewLogEntry"
-            android:label="@string/title_activity_view_log_entry" >
+            android:label="@string/title_activity_view_log_entry"
+            android:parentActivityName="com.wickedsoftwaredesigns.diabeticslog.MainActivity" >
         </activity>
     </application>
 

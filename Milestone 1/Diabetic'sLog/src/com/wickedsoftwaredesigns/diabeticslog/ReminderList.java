@@ -1,6 +1,7 @@
 package com.wickedsoftwaredesigns.diabeticslog;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -12,7 +13,11 @@ public class ReminderList extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.setTitle("Reminders List");
 		setContentView(R.layout.activity_reminder_list);
+		
+		ActionBar actionBar = getActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
 	}
 	
 	/**

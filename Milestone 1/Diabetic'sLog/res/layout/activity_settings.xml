@@ -34,14 +34,14 @@
 	            android:layout_height="wrap_content"
 	            android:text="@string/mg_dl"
 	            android:textColor="@android:color/white"
-	            android:onClick="onRadioButtonClicked"/>
+	            />
 	        <RadioButton 
 	            android:id="@+id/radio_mmolL"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:text="@string/mmol_l"
 	            android:textColor="@android:color/white"
-	            android:onClick="onRadioButtonClicked"/>
+	            />
 	    </RadioGroup>
 
     </LinearLayout>

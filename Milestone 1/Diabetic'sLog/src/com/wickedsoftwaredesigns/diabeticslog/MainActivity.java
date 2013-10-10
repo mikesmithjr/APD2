@@ -1,6 +1,7 @@
 package com.wickedsoftwaredesigns.diabeticslog;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;

@@ -1,18 +1,47 @@
 package com.wickedsoftwaredesigns.diabeticslog;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class LogItemList extends Activity {
+	
+	ListView logItemList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.setTitle("Log List");
 		setContentView(R.layout.activity_log_item_list);
+		
+		ActionBar actionBar = getActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
+	    
+	    String[] logItemTitle = getResources().getStringArray(R.array.log_item_title);
+	    
+	    
+	    logItemList = (ListView)findViewById(R.id.logItemList);
+	    logItemList.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, logItemTitle));
+	    logItemList.setOnItemClickListener(new OnItemClickListener() {
+	        public void onItemClick(AdapterView<?> parent, View view,
+	                int position, long id) {
+	              // When clicked, show a toast with the TextView text
+	                 Intent myIntent = new Intent(view.getContext(), ViewLogEntry.class);
+	                 startActivityForResult(myIntent, 0);
+
+	            }
+	          });
+	    
 	}
 	
 	/**

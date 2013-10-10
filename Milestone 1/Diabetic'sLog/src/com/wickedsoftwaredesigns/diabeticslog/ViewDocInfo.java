@@ -1,18 +1,31 @@
 package com.wickedsoftwaredesigns.diabeticslog;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class ViewDocInfo extends Activity {
 
+	TextView viewDocName;
+	TextView viewDocNumber;
+	TextView viewDocAddress;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.setTitle("View Doc's Info");
 		setContentView(R.layout.activity_view_doc_info);
+		
+		ActionBar actionBar = getActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
+		
+		viewDocName = (TextView)findViewById(R.id.drNameFieldView);
+		viewDocNumber = (TextView)findViewById(R.id.drNumFieldView);
+		viewDocAddress = (TextView)findViewById(R.id.docAddressFieldView);
 	}
 	
 	/**

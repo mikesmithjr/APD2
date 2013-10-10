@@ -1,18 +1,36 @@
 package com.wickedsoftwaredesigns.diabeticslog;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 
-public class EditMedEntry extends Activity {
+public class EditMedEntry extends Activity implements OnClickListener{
 
+	EditText medName;
+	EditText qtyTime;
+	Button updateMed;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.setTitle("Edit Medication");
 		setContentView(R.layout.activity_edit_med_entry);
+		
+		ActionBar actionBar = getActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
+		
+		medName = (EditText)findViewById(R.id.medNameField);
+		qtyTime = (EditText)findViewById(R.id.medQtyField);
+		updateMed = (Button)findViewById(R.id.updateMedicationButton);
+		updateMed.setOnClickListener(this);
 	}
 	
 	/**
@@ -47,6 +65,13 @@ public class EditMedEntry extends Activity {
 		}
 		
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		Intent intent = new Intent(this, MedList.class);
+		startActivity(intent);
 	}
 
 }

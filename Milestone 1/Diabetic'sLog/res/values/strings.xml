@@ -51,5 +51,85 @@
     <string name="mg_dl">mg/dL</string>
     <string name="mmol_l">mmol/L</string>
     <string name="reminders">Reminders</string>
+    <string name="reminder_title">Reminder Title</string>
+    <string name="sound_vibrate">Sound &amp; Vibrate</string>
+    <string name="reminder_alert_type">Reminder Alert Type</string>
+    <string name="sound_only">Sound Only</string>
+    <string name="vibrate_only">Vibrate Only</string>
+    <string name="am_medication">AM Medication</string>
+    <string name="reminder_time">Reminder Time</string>
+    <string name="_8_00am">8:00am</string>
+    <string-array name="log_item_title">
+        <item>Log Item 1</item>
+        <item>Log Item 2</item>
+        <item>Log Item 3</item>
+        <item>Log Item 4</item>
+        <item>Log Item 5</item>
+        <item>Log Item 6</item>
+        <item>Log Item 7</item>
+        <item>Log Item 8</item>
+        <item>Log Item 9</item>
+        <item>Log Item 10</item>
+    </string-array>
+    <string-array name="log_item_time">
+        <item>8:00am</item>
+        <item>12:00pm</item>
+        <item>6:00pm</item>
+        <item>9:00am</item>
+        <item>1:00pm</item>
+        <item>7:00pm</item>
+        <item>7:30am</item>
+        <item>12:30pm</item>
+        <item>9:00pm</item>
+        <item>8:30am</item>
+    </string-array>
+    <string-array name="med_item_title">
+        <item>Log Item 1</item>
+        <item>Log Item 2</item>
+        <item>Log Item 3</item>
+        <item>Log Item 4</item>
+        <item>Log Item 5</item>
+        <item>Log Item 6</item>
+        <item>Log Item 7</item>
+        <item>Log Item 8</item>
+        <item>Log Item 9</item>
+        <item>Log Item 10</item>
+    </string-array>
+    <string-array name="med_item_qty">
+        <item>Log Item 1</item>
+        <item>Log Item 2</item>
+        <item>Log Item 3</item>
+        <item>Log Item 4</item>
+        <item>Log Item 5</item>
+        <item>Log Item 6</item>
+        <item>Log Item 7</item>
+        <item>Log Item 8</item>
+        <item>Log Item 9</item>
+        <item>Log Item 10</item>
+    </string-array>
+    <string-array name="reminder_item_title">
+        <item>Log Item 1</item>
+        <item>Log Item 2</item>
+        <item>Log Item 3</item>
+        <item>Log Item 4</item>
+        <item>Log Item 5</item>
+        <item>Log Item 6</item>
+        <item>Log Item 7</item>
+        <item>Log Item 8</item>
+        <item>Log Item 9</item>
+        <item>Log Item 10</item>
+    </string-array>
+    <string-array name="reminder_item_time">
+        <item>Log Item 1</item>
+        <item>Log Item 2</item>
+        <item>Log Item 3</item>
+        <item>Log Item 4</item>
+        <item>Log Item 5</item>
+        <item>Log Item 6</item>
+        <item>Log Item 7</item>
+        <item>Log Item 8</item>
+        <item>Log Item 9</item>
+        <item>Log Item 10</item>
+    </string-array>
 
 </resources>
